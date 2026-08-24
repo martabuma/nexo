@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #12201b;
+}
+
+.bg-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(237, 231, 216, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+  pointer-events: none;
+}
+
+.dotted-rule {
+  background-image: linear-gradient(to right, rgba(199, 164, 91, 0.5) 40%, transparent 0%);
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+}
+
+.stamp-ring {
+  border: 2px dashed currentColor;
+}
+
+/* Mapa animado de entrada al mercado */
+.route-line {
+  stroke-dasharray: 5 7;
+  animation: dashflow 2.2s linear infinite;
+}
+
+@keyframes dashflow {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+
+.map-node-pulse {
+  animation: nodepulse 2.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes nodepulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.75;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #c7a45b;
+  outline-offset: 3px;
+}
