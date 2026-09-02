@@ -120,7 +120,7 @@ const dict: Record<
       cards: [
         { name: "Starter", tag: "Diagnóstico", body: "Viabilidad, estructura recomendada y calendario realista antes de comprometer capital." },
         { name: "Growth", tag: "Apertura completa", body: "Ejecución de principio a fin: registro, procurador, cuenta bancaria, un único contacto." },
-        { name: "Enterprise", tag: { name: "Enterprise", tag: "Apertura + acompañamiento", body: "Todo lo anterior, más acompañamiento continuo y revisión trimestral de la estructura tras la apertura." },
+        { name: "Enterprise", tag: "Apertura + acompañamiento", body: "Todo lo anterior, más acompañamiento continuo y revisión trimestral de la estructura tras la apertura." },
       ],
       note: "Cada nivel incluye coordinación con nuestra red de abogados y contables registrados. Nunca sustituimos su trabajo.",
     },
@@ -211,7 +211,7 @@ const dict: Record<
       cards: [
         { name: "Starter", tag: "Diagnóstico", body: "Viabilidade, estrutura recomendada e cronograma realista antes de comprometer capital." },
         { name: "Growth", tag: "Abertura completa", body: "Execução ponta a ponta: registro, procurador, conta bancária, um único contato." },
-        { name: "Enterprise", tag: { name: "Enterprise", tag: "Abertura + acompanhamento", body: "Tudo isso, mais acompanhamento contínuo e revisão trimestral da estrutura após a abertura." },
+        { name: "Enterprise", tag: "Abertura + acompanhamento", body: "Tudo isso, mais acompanhamento contínuo e revisão trimestral da estrutura após a abertura." },
       ],
       note: "Cada nível inclui coordenação com nossa rede de advogados e contadores registrados. Nunca substituímos o trabalho deles.",
     },
@@ -302,7 +302,7 @@ const dict: Record<
       cards: [
         { name: "Starter", tag: "Diagnosis", body: "Viability, recommended structure, and a realistic timeline before committing capital." },
         { name: "Growth", tag: "Full launch", body: "End-to-end execution: registration, resident representative, bank account, one point of contact." },
-        { name: { name: "Enterprise", tag: "Launch + ongoing support", body: "Everything above, plus ongoing support and a quarterly structure review after launch." },
+        { name: "Enterprise", tag: "Launch + ongoing support", body: "Everything above, plus ongoing support and a quarterly structure review after launch." },
       ],
       note: "Every tier includes coordination with our network of licensed lawyers and accountants. We never replace their work.",
     },
