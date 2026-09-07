@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import EntryMap from "./components/EntryMap";
-import ContactForm from "./components/ContactForm";
 
 type Lang = "es" | "pt" | "en";
 
@@ -148,7 +147,7 @@ const dict: Record<
       eyebrow: "Siguiente paso",
       title: "Cuéntanos sobre tu proyecto en Brasil",
       body: "Con una llamada de 30 minutos es suficiente para saber si tu proyecto es viable y qué estructura te conviene.",
-      emailLabel: "Escríbenos",
+      emailLabel: "Completar diagnóstico",
       whatsLabel: "WhatsApp directo",
       formName: "Nombre completo",
       formEmail: "Email",
@@ -248,7 +247,7 @@ const dict: Record<
       eyebrow: "Próximo passo",
       title: "Conte-nos sobre o seu projeto no Brasil",
       body: "Uma chamada de 30 minutos já basta para saber se seu projeto é viável e qual estrutura combina com você.",
-      emailLabel: "Escreva para nós",
+      emailLabel: "Preencher diagnóstico",
       whatsLabel: "WhatsApp direto",
       formName: "Nome completo",
       formEmail: "E-mail",
@@ -348,7 +347,7 @@ const dict: Record<
       eyebrow: "Next step",
       title: "Tell us about your project in Brazil",
       body: "A 30-minute call is enough to know if your project is viable and which structure fits.",
-      emailLabel: "Email us",
+      emailLabel: "Complete diagnosis",
       whatsLabel: "Direct WhatsApp",
       formName: "Full name",
       formEmail: "Email",
@@ -593,25 +592,16 @@ export default function Home() {
           </h2>
           <p className="mt-4 font-body text-sm text-textlight/70">{t.contact.body}</p>
 
-          <ContactForm
-            lang={lang}
-            labels={{
-              name: t.contact.formName,
-              email: t.contact.formEmail,
-              phone: t.contact.formPhone,
-              message: t.contact.formMessage,
-              messagePlaceholder: t.contact.formMessagePlaceholder,
-              submit: t.contact.formSubmit,
-              sending: t.contact.formSending,
-              success: t.contact.formSuccess,
-              error: t.contact.formError,
-            }}
-          />
-
-          <div className="mt-6 flex justify-center">
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href="/diagnostico"
+              className="rounded-full bg-ouro px-6 py-3 text-center font-body text-sm font-semibold text-inkdeep transition-transform hover:scale-[1.02]"
+            >
+              {t.contact.emailLabel}
+            </a>
             <a
               href="https://wa.me/5500000000000"
-              className="rounded-full border border-white/20 px-6 py-3 font-body text-sm font-medium text-textlight/85 hover:border-white/40"
+              className="rounded-full border border-white/20 px-6 py-3 text-center font-body text-sm font-medium text-textlight/85 hover:border-white/40"
             >
               {t.contact.whatsLabel}
             </a>
