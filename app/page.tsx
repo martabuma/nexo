@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import EntryMap from "./components/EntryMap";
+import ContactForm from "./components/ContactForm";
 
 type Lang = "es" | "pt" | "en";
 
@@ -51,6 +52,15 @@ const dict: Record<
       body: string;
       emailLabel: string;
       whatsLabel: string;
+      formName: string;
+      formEmail: string;
+      formPhone: string;
+      formMessage: string;
+      formMessagePlaceholder: string;
+      formSubmit: string;
+      formSending: string;
+      formSuccess: string;
+      formError: string;
     };
     footer: { rights: string; disclaimer: string };
   }
@@ -136,10 +146,19 @@ const dict: Record<
     },
     contact: {
       eyebrow: "Siguiente paso",
-      title: "Cuéntanos qué quieres abrir en Brasil",
+      title: "Cuéntanos sobre tu proyecto en Brasil",
       body: "Con una llamada de 30 minutos es suficiente para saber si tu proyecto es viable y qué estructura te conviene.",
       emailLabel: "Escríbenos",
       whatsLabel: "WhatsApp directo",
+      formName: "Nombre completo",
+      formEmail: "Email",
+      formPhone: "Teléfono / WhatsApp",
+      formMessage: "Cuéntanos brevemente tu proyecto",
+      formMessagePlaceholder: "Qué quieres abrir en Brasil, de dónde eres, y cualquier detalle que nos ayude a entender tu caso...",
+      formSubmit: "Enviar",
+      formSending: "Enviando...",
+      formSuccess: "¡Gracias! Recibimos tu mensaje y te contactaremos pronto.",
+      formError: "Hubo un error al enviar el formulario. Intenta de nuevo o escríbenos por WhatsApp.",
     },
     footer: {
       rights: "Nexo Market Entry. Todos los derechos reservados.",
@@ -227,10 +246,19 @@ const dict: Record<
     },
     contact: {
       eyebrow: "Próximo passo",
-      title: "Conte o que você quer abrir no Brasil",
+      title: "Conte-nos sobre o seu projeto no Brasil",
       body: "Uma chamada de 30 minutos já basta para saber se seu projeto é viável e qual estrutura combina com você.",
       emailLabel: "Escreva para nós",
       whatsLabel: "WhatsApp direto",
+      formName: "Nome completo",
+      formEmail: "E-mail",
+      formPhone: "Telefone / WhatsApp",
+      formMessage: "Conte brevemente sobre seu projeto",
+      formMessagePlaceholder: "O que você quer abrir no Brasil, de onde você é, e qualquer detalhe que nos ajude a entender seu caso...",
+      formSubmit: "Enviar",
+      formSending: "Enviando...",
+      formSuccess: "Obrigado! Recebemos sua mensagem e entraremos em contato em breve.",
+      formError: "Houve um erro ao enviar o formulário. Tente novamente ou fale conosco pelo WhatsApp.",
     },
     footer: {
       rights: "Nexo Market Entry. Todos os direitos reservados.",
@@ -318,10 +346,19 @@ const dict: Record<
     },
     contact: {
       eyebrow: "Next step",
-      title: "Tell us what you want to open in Brazil",
+      title: "Tell us about your project in Brazil",
       body: "A 30-minute call is enough to know if your project is viable and which structure fits.",
       emailLabel: "Email us",
       whatsLabel: "Direct WhatsApp",
+      formName: "Full name",
+      formEmail: "Email",
+      formPhone: "Phone / WhatsApp",
+      formMessage: "Tell us briefly about your project",
+      formMessagePlaceholder: "What you want to open in Brazil, where you're from, and any details that help us understand your case...",
+      formSubmit: "Send",
+      formSending: "Sending...",
+      formSuccess: "Thanks! We received your message and will be in touch soon.",
+      formError: "There was an error sending the form. Please try again or message us on WhatsApp.",
     },
     footer: {
       rights: "Nexo Market Entry. All rights reserved.",
@@ -395,7 +432,7 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="#contacto"
+                  href="/diagnostico"
                   className="rounded-full bg-ouro px-6 py-3 text-center font-body text-sm font-semibold text-inkdeep transition-transform hover:scale-[1.02]"
                 >
                   {t.hero.cta}
@@ -549,20 +586,29 @@ export default function Home() {
 
       {/* CONTACT */}
       <section id="contacto" className="px-5 py-16 sm:py-24">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-lg text-center">
           <p className="font-mono text-xs uppercase tracking-widest text-visto/90">{t.contact.eyebrow}</p>
           <h2 className="mt-3 font-display text-2xl font-bold leading-snug text-textlight sm:text-3xl">
             {t.contact.title}
           </h2>
           <p className="mt-4 font-body text-sm text-textlight/70">{t.contact.body}</p>
 
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href="mailto:hola@nexomarketentry.com"
-              className="rounded-full bg-ouro px-6 py-3 font-body text-sm font-semibold text-inkdeep"
-            >
-              {t.contact.emailLabel} → hola@nexomarketentry.com
-            </a>
+          <ContactForm
+            lang={lang}
+            labels={{
+              name: t.contact.formName,
+              email: t.contact.formEmail,
+              phone: t.contact.formPhone,
+              message: t.contact.formMessage,
+              messagePlaceholder: t.contact.formMessagePlaceholder,
+              submit: t.contact.formSubmit,
+              sending: t.contact.formSending,
+              success: t.contact.formSuccess,
+              error: t.contact.formError,
+            }}
+          />
+
+          <div className="mt-6 flex justify-center">
             <a
               href="https://wa.me/5500000000000"
               className="rounded-full border border-white/20 px-6 py-3 font-body text-sm font-medium text-textlight/85 hover:border-white/40"
