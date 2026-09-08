@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://nexo-market-entry.vercel.app";
+const BASE_URL = "https://nexomarketentry.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://nexo-market-entry.vercel.app/sitemap.xml",
+    sitemap: "https://nexomarketentry.com/sitemap.xml",
   };
 }
