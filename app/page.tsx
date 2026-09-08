@@ -600,7 +600,7 @@ export default function Home() {
               {t.contact.emailLabel}
             </a>
             <a
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5511936203786"
               className="rounded-full border border-white/20 px-6 py-3 text-center font-body text-sm font-medium text-textlight/85 hover:border-white/40"
             >
               {t.contact.whatsLabel}
