@@ -60,6 +60,30 @@ body {
   }
 }
 
+/* Puntos de la red global: aparecen y desaparecen de forma escalonada */
+.node-fade {
+  opacity: 0;
+  animation-name: nodefade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nodefade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;

@@ -73,7 +73,7 @@ const dict: Record<
       sub: "Coordinamos estructura societaria, procurador residente y apertura completa junto a una red de abogados y contables registrados en Brasil, para que tu empresa opere sin sorpresas.",
       cta: "Agenda tu diagnóstico inicial",
       ctaSecondary: "Ver cómo trabajamos",
-      mapCaption: "Nexo conecta estos mercados con Brasil.",
+      mapCaption: "Nexo conecta el mundo con Brasil.",
       brLabel: "BRASIL",
     },
     stats: {
@@ -173,7 +173,7 @@ const dict: Record<
       sub: "Coordenamos estrutura societária, procurador residente e abertura completa junto a uma rede de advogados e contadores registrados no Brasil, para sua empresa operar sem surpresas.",
       cta: "Agende seu diagnóstico inicial",
       ctaSecondary: "Ver como trabalhamos",
-      mapCaption: "A Nexo conecta esses mercados ao Brasil.",
+      mapCaption: "A Nexo conecta o mundo com o Brasil.",
       brLabel: "BRASIL",
     },
     stats: {
@@ -273,7 +273,7 @@ const dict: Record<
       sub: "We coordinate your corporate structure, resident representative, and full company registration alongside a network of licensed lawyers and accountants in Brazil, so your company opens without surprises.",
       cta: "Book your initial diagnosis",
       ctaSecondary: "See how we work",
-      mapCaption: "Nexo connects these markets with Brazil.",
+      mapCaption: "Nexo connects the world with Brazil.",
       brLabel: "BRAZIL",
     },
     stats: {
