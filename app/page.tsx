@@ -79,17 +79,17 @@ const dict: Record<
     stats: {
       opportunityTitle: "El mercado que te espera",
       opportunityStats: [
-        { value: "+200M", label: "consumidores en la economía más grande de Latinoamérica" },
-        { value: "+106.000", label: "microempresarios extranjeros activos en Brasil, un 24% más que el año anterior" },
-        { value: "4,6M", label: "pequeños negocios abiertos en Brasil en 2025, récord histórico" },
+        { value: "+200M", label: "consumidores en la economía más grande de Latinoamérica." },
+        { value: "+106.000", label: "microempresarios extranjeros activos en Brasil, un 24% más que el año anterior." },
+        { value: "4,6M", label: "pequeños negocios abiertos en Brasil en 2025, récord histórico." },
       ],
       confidenceTitle: "Todo en un mismo lugar.",
       confidenceBody:
         "Abogado, contable y coordinación de trámites bajo un solo equipo, para que no tengas que armar tú mismo ese rompecabezas.",
       confidenceBullets: [
-        "Un equipo, no cinco proveedores distintos",
-        "Abogado y contable ya alineados entre sí",
-        "Tú hablas con una sola persona, no con cada organismo",
+        "Un equipo, no cinco proveedores distintos.",
+        "Abogado y contable ya alineados entre sí.",
+        "Tú hablas con una sola persona, no con cada organismo.",
       ],
     },
     problem: {
@@ -104,7 +104,7 @@ const dict: Record<
     },
     process: {
       eyebrow: "Cómo trabajamos",
-      title: "Tres movimientos, un solo punto de contacto",
+      title: "Tres movimientos, un solo punto de contacto.",
       steps: [
         {
           n: "01",
@@ -125,7 +125,7 @@ const dict: Record<
     },
     services: {
       eyebrow: "Servicios",
-      title: "Un nivel para cada momento del proyecto",
+      title: "Un nivel para cada momento del proyecto.",
       cards: [
         { name: "Starter", tag: "Diagnóstico", body: "Viabilidad, estructura recomendada y calendario realista antes de comprometer capital." },
         { name: "Growth", tag: "Apertura completa", body: "Ejecución de principio a fin: registro, procurador, cuenta bancaria, un único contacto." },
@@ -135,7 +135,7 @@ const dict: Record<
     },
     markets: {
       eyebrow: "A quién ayudamos",
-      title: "Pymes e inversores que ya miran a Brasil",
+      title: "Pymes e inversores que ya miran a Brasil.",
       body: "Trabajamos en tu idioma, con tu huso horario en mente.",
       list: ["Argentina", "Uruguay", "Colombia", "España", "Portugal", "Estados Unidos"],
     },
@@ -145,7 +145,7 @@ const dict: Record<
     },
     contact: {
       eyebrow: "Siguiente paso",
-      title: "Cuéntanos sobre tu proyecto en Brasil",
+      title: "Cuéntanos sobre tu proyecto en Brasil.",
       body: "Con una llamada de 30 minutos es suficiente para saber si tu proyecto es viable y qué estructura te conviene.",
       emailLabel: "Completar diagnóstico",
       whatsLabel: "WhatsApp directo",
@@ -179,17 +179,17 @@ const dict: Record<
     stats: {
       opportunityTitle: "O mercado que te espera",
       opportunityStats: [
-        { value: "+200M", label: "consumidores na maior economia da América Latina" },
-        { value: "+106.000", label: "microempreendedores estrangeiros ativos no Brasil, 24% a mais que no ano anterior" },
-        { value: "4,6M", label: "pequenos negócios abertos no Brasil em 2025, recorde histórico" },
+        { value: "+200M", label: "consumidores na maior economia da América Latina." },
+        { value: "+106.000", label: "microempreendedores estrangeiros ativos no Brasil, 24% a mais que no ano anterior." },
+        { value: "4,6M", label: "pequenos negócios abertos no Brasil em 2025, recorde histórico." },
       ],
       confidenceTitle: "Tudo em um só lugar.",
       confidenceBody:
         "Advogado, contador e coordenação de trâmites em uma única equipe, para você não precisar montar esse quebra-cabeça sozinho.",
       confidenceBullets: [
-        "Uma equipe, não cinco fornecedores diferentes",
-        "Advogado e contador já alinhados entre si",
-        "Você fala com uma única pessoa, não com cada órgão",
+        "Uma equipe, não cinco fornecedores diferentes.",
+        "Advogado e contador já alinhados entre si.",
+        "Você fala com uma única pessoa, não com cada órgão.",
       ],
     },
     problem: {
@@ -204,7 +204,7 @@ const dict: Record<
     },
     process: {
       eyebrow: "Como trabalhamos",
-      title: "Três movimentos, um único ponto de contato",
+      title: "Três movimentos, um único ponto de contato.",
       steps: [
         {
           n: "01",
@@ -225,7 +225,7 @@ const dict: Record<
     },
     services: {
       eyebrow: "Serviços",
-      title: "Um nível para cada momento do projeto",
+      title: "Um nível para cada momento do projeto.",
       cards: [
         { name: "Starter", tag: "Diagnóstico", body: "Viabilidade, estrutura recomendada e cronograma realista antes de comprometer capital." },
         { name: "Growth", tag: "Abertura completa", body: "Execução ponta a ponta: registro, procurador, conta bancária, um único contato." },
@@ -235,7 +235,7 @@ const dict: Record<
     },
     markets: {
       eyebrow: "A quem ajudamos",
-      title: "PMEs e investidores que já olham para o Brasil",
+      title: "PMEs e investidores que já olham para o Brasil.",
       body: "Trabalhamos no seu idioma, considerando seu fuso horário.",
       list: ["Argentina", "Uruguai", "Colômbia", "Espanha", "Portugal", "Estados Unidos"],
     },
@@ -245,7 +245,7 @@ const dict: Record<
     },
     contact: {
       eyebrow: "Próximo passo",
-      title: "Conte-nos sobre o seu projeto no Brasil",
+      title: "Conte-nos sobre o seu projeto no Brasil.",
       body: "Uma chamada de 30 minutos já basta para saber se seu projeto é viável e qual estrutura combina com você.",
       emailLabel: "Preencher diagnóstico",
       whatsLabel: "WhatsApp direto",
@@ -279,17 +279,17 @@ const dict: Record<
     stats: {
       opportunityTitle: "The market waiting for you",
       opportunityStats: [
-        { value: "+200M", label: "consumers in Latin America's largest economy" },
-        { value: "+106,000", label: "active foreign micro-entrepreneurs in Brazil, up 24% year over year" },
-        { value: "4.6M", label: "small businesses opened in Brazil in 2025, an all-time record" },
+        { value: "+200M", label: "consumers in Latin America's largest economy." },
+        { value: "+106,000", label: "active foreign micro-entrepreneurs in Brazil, up 24% year over year." },
+        { value: "4.6M", label: "small businesses opened in Brazil in 2025, an all-time record." },
       ],
       confidenceTitle: "Everything in one place.",
       confidenceBody:
         "Lawyer, accountant, and process coordination under one team, so you don't have to piece that puzzle together yourself.",
       confidenceBullets: [
-        "One team, not five different providers",
-        "Lawyer and accountant already aligned with each other",
-        "You talk to one person, not to every agency",
+        "One team, not five different providers.",
+        "Lawyer and accountant already aligned with each other.",
+        "You talk to one person, not to every agency.",
       ],
     },
     problem: {
@@ -304,7 +304,7 @@ const dict: Record<
     },
     process: {
       eyebrow: "How we work",
-      title: "Three moves, one single point of contact",
+      title: "Three moves, one single point of contact.",
       steps: [
         {
           n: "01",
@@ -325,7 +325,7 @@ const dict: Record<
     },
     services: {
       eyebrow: "Services",
-      title: "A tier for every stage of the project",
+      title: "A tier for every stage of the project.",
       cards: [
         { name: "Starter", tag: "Diagnosis", body: "Viability, recommended structure, and a realistic timeline before committing capital." },
         { name: "Growth", tag: "Full launch", body: "End-to-end execution: registration, resident representative, bank account, one point of contact." },
@@ -335,7 +335,7 @@ const dict: Record<
     },
     markets: {
       eyebrow: "Who we help",
-      title: "SMEs and investors already looking at Brazil",
+      title: "SMEs and investors already looking at Brazil.",
       body: "We work in your language, mindful of your time zone.",
       list: ["Argentina", "Uruguay", "Colombia", "Spain", "Portugal", "United States"],
     },
@@ -345,7 +345,7 @@ const dict: Record<
     },
     contact: {
       eyebrow: "Next step",
-      title: "Tell us about your project in Brazil",
+      title: "Tell us about your project in Brazil.",
       body: "A 30-minute call is enough to know if your project is viable and which structure fits.",
       emailLabel: "Complete diagnosis",
       whatsLabel: "Direct WhatsApp",
