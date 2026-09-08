@@ -431,7 +431,7 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="/diagnostico"
+                  href={`/diagnostico?lang=${lang}`}
                   className="rounded-full bg-ouro px-6 py-3 text-center font-body text-sm font-semibold text-inkdeep transition-transform hover:scale-[1.02]"
                 >
                   {t.hero.cta}
@@ -594,7 +594,7 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a
-              href="/diagnostico"
+              href={`/diagnostico?lang=${lang}`}
               className="rounded-full bg-ouro px-6 py-3 text-center font-body text-sm font-semibold text-inkdeep transition-transform hover:scale-[1.02]"
             >
               {t.contact.emailLabel}

@@ -349,7 +349,14 @@ function Select({
 }
 
 export default function DiagnosticoPage() {
-  const [lang, setLang] = useState<Lang>("es");
+  const [lang, setLang] = useState<Lang>(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const l = params.get("lang");
+      if (l === "es" || l === "pt" || l === "en") return l;
+    }
+    return "es";
+  });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const t = dict[lang];
 
