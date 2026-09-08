@@ -46,6 +46,11 @@ const dict: Record<
     };
     markets: { eyebrow: string; title: string; body: string; list: string[] };
     trust: { title: string; body: string };
+    faq: {
+      eyebrow: string;
+      title: string;
+      items: { q: string; a: string }[];
+    };
     contact: {
       eyebrow: string;
       title: string;
@@ -143,6 +148,36 @@ const dict: Record<
     trust: {
       title: "Coordinamos. No sustituimos.",
       body: "No prestamos asesoría legal ni contable de forma directa: esa parte queda siempre en manos de abogados y contables registrados de nuestra red. Nuestro trabajo es que ninguna pieza se pierda entre organismos.",
+    },
+    faq: {
+      eyebrow: "Preguntas frecuentes",
+      title: "Lo que más nos preguntan.",
+      items: [
+        {
+          q: "¿Necesito estar en Brasil para abrir una empresa?",
+          a: "No. Podés coordinar todo el proceso a distancia con un procurador residente que te representa en Brasil. Solo el registro migratorio (si pedís visado) y algún paso puntual de apertura de cuenta bancaria exigen presencia física.",
+        },
+        {
+          q: "¿Cuánto tiempo tarda el proceso de apertura?",
+          a: "Entre 90 y 180 días, según el organismo y el estado elegido. Los estados con mayor digitalización, como Paraná, suelen ser más rápidos.",
+        },
+        {
+          q: "¿Qué es un procurador residente y por qué es obligatorio?",
+          a: "Es una persona con residencia en Brasil que representa legalmente a un socio extranjero ante organismos como el Banco Central y la Receita Federal. Es obligatorio por ley para cualquier empresa con socio extranjero no residente.",
+        },
+        {
+          q: "¿Necesito un abogado para abrir una empresa en Brasil?",
+          a: "No siempre. Para la apertura societaria estándar no es obligatorio, pero sí lo es para tramitar un visado de inversión, ya que implica representación legal formal ante el CNIg.",
+        },
+        {
+          q: "¿Qué estructura societaria conviene, LTDA o S.A.?",
+          a: "Para más del 90% de los casos, la LTDA es la opción correcta: no exige capital mínimo y es más simple de mantener. La S.A. solo tiene sentido si buscás captar inversión institucional.",
+        },
+        {
+          q: "¿Cuánto capital necesito para abrir una empresa en Brasil?",
+          a: "No hay un mínimo legal para una empresa estándar. Si además querés un visado de inversión, el mínimo exigido es de R$ 500.000 (o R$ 150.000 para empresas de base tecnológica).",
+        },
+      ],
     },
     contact: {
       eyebrow: "Siguiente paso",
@@ -244,6 +279,36 @@ const dict: Record<
       title: "Coordenamos. Não substituímos.",
       body: "Não prestamos assessoria jurídica nem contábil diretamente: essa parte fica sempre com advogados e contadores registrados da nossa rede. Nosso trabalho é garantir que nada se perca entre os órgãos.",
     },
+    faq: {
+      eyebrow: "Perguntas frequentes",
+      title: "O que mais nos perguntam.",
+      items: [
+        {
+          q: "Preciso estar no Brasil para abrir uma empresa?",
+          a: "Não. Você pode coordenar todo o processo à distância com um procurador residente que te representa no Brasil. Só o registro migratório (se pedir visto) e alguma etapa pontual de abertura de conta bancária exigem presença física.",
+        },
+        {
+          q: "Quanto tempo leva o processo de abertura?",
+          a: "Entre 90 e 180 dias, dependendo do órgão e do estado escolhido. Estados com maior digitalização, como o Paraná, costumam ser mais rápidos.",
+        },
+        {
+          q: "O que é um procurador residente e por que é obrigatório?",
+          a: "É uma pessoa com residência no Brasil que representa legalmente um sócio estrangeiro perante órgãos como o Banco Central e a Receita Federal. É obrigatório por lei para qualquer empresa com sócio estrangeiro não residente.",
+        },
+        {
+          q: "Preciso de um advogado para abrir uma empresa no Brasil?",
+          a: "Nem sempre. Para a abertura societária padrão não é obrigatório, mas é para tramitar um visto de investidor, já que implica representação legal formal perante o CNIg.",
+        },
+        {
+          q: "Qual estrutura societária escolher, LTDA ou S.A.?",
+          a: "Para mais de 90% dos casos, a LTDA é a opção correta: não exige capital mínimo e é mais simples de manter. A S.A. só faz sentido se buscar captar investimento institucional.",
+        },
+        {
+          q: "Quanto capital preciso para abrir uma empresa no Brasil?",
+          a: "Não há mínimo legal para uma empresa padrão. Se além disso quiser um visto de investidor, o mínimo exigido é de R$ 500.000 (ou R$ 150.000 para empresas de base tecnológica).",
+        },
+      ],
+    },
     contact: {
       eyebrow: "Próximo passo",
       title: "Conte-nos sobre o seu projeto no Brasil.",
@@ -343,6 +408,36 @@ const dict: Record<
     trust: {
       title: "We coordinate. We don't replace.",
       body: "We don't provide legal or accounting advice directly. That part always stays with licensed lawyers and accountants in our network. Our job is making sure nothing gets lost between agencies.",
+    },
+    faq: {
+      eyebrow: "Frequently asked questions",
+      title: "What people ask us most.",
+      items: [
+        {
+          q: "Do I need to be in Brazil to open a company?",
+          a: "No. You can coordinate the entire process remotely with a resident representative who represents you in Brazil. Only the migration registration (if you apply for a visa) and one specific step of the bank account opening require physical presence.",
+        },
+        {
+          q: "How long does the opening process take?",
+          a: "Between 90 and 180 days, depending on the agency and the state chosen. More digitized states, like Paraná, tend to be faster.",
+        },
+        {
+          q: "What is a resident representative and why is it mandatory?",
+          a: "It's a person residing in Brazil who legally represents a foreign partner before agencies like the Central Bank and the Federal Revenue Service. It's legally mandatory for any company with a non-resident foreign partner.",
+        },
+        {
+          q: "Do I need a lawyer to open a company in Brazil?",
+          a: "Not always. It's not mandatory for standard company registration, but it is for processing an investor visa, since it involves formal legal representation before the CNIg.",
+        },
+        {
+          q: "Which corporate structure is better, LTDA or S.A.?",
+          a: "For more than 90% of cases, the LTDA is the right choice: it requires no minimum capital and is simpler to maintain. An S.A. only makes sense if you're looking to raise institutional investment.",
+        },
+        {
+          q: "How much capital do I need to open a company in Brazil?",
+          a: "There's no legal minimum for a standard company. If you also want an investor visa, the required minimum is R$500,000 (or R$150,000 for technology-based companies).",
+        },
+      ],
     },
     contact: {
       eyebrow: "Next step",
@@ -582,6 +677,38 @@ export default function Home() {
             <p className="mt-1.5 font-body text-sm leading-relaxed text-textlight/65">{t.trust.body}</p>
           </div>
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-b border-white/10 bg-inkdeep px-5 py-16 sm:py-24">
+        <div className="mx-auto max-w-3xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-visto/90">{t.faq.eyebrow}</p>
+          <h2 className="mt-3 font-display text-2xl font-bold leading-snug text-textlight sm:text-3xl">
+            {t.faq.title}
+          </h2>
+          <div className="mt-8 space-y-6">
+            {t.faq.items.map((item, i) => (
+              <div key={i} className="border-t border-white/10 pt-6">
+                <h3 className="font-display text-base font-bold text-textlight">{item.q}</h3>
+                <p className="mt-2 font-body text-sm leading-relaxed text-textlight/70">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: t.faq.items.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+              })),
+            }),
+          }}
+        />
       </section>
 
       {/* CONTACT */}
