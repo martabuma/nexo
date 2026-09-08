@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Nexo Market Entry — Entrada al mercado brasileño",
@@ -18,7 +19,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="font-body bg-ink text-textlight antialiased">{children}</body>
+      <body className="font-body bg-ink text-textlight antialiased">
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
