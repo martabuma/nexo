@@ -484,13 +484,13 @@ export default function Home() {
           <nav className="hidden items-center gap-6 font-body text-sm text-textlight/80 md:flex">
             <a href="#proceso" className="hover:text-textlight">{t.nav.process}</a>
             <a href="#servicios" className="hover:text-textlight">{t.nav.services}</a>
-            <a href="/blog" className="hover:text-textlight">{t.nav.blog}</a>
+            <a href={`/blog?lang=${lang}`} className="hover:text-textlight">{t.nav.blog}</a>
             <a href="#contacto" className="rounded-full bg-ouro px-4 py-2 font-medium text-inkdeep hover:bg-ouro/90">
               {t.nav.cta}
             </a>
           </nav>
           <div className="flex items-center gap-2">
-            <a href="/blog" className="font-mono text-xs text-textlight/70 hover:text-textlight md:hidden">
+            <a href={`/blog?lang=${lang}`} className="font-mono text-xs text-textlight/70 hover:text-textlight md:hidden">
               {t.nav.blog}
             </a>
             <div className="flex items-center gap-1 rounded-full border border-white/15 p-1 font-mono text-xs">
