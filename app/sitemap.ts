@@ -8,6 +8,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/diagnostico`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     {
+      url: `${BASE_URL}/blog/cuenta-bancaria-capital-extranjero-nueva-norma-2026`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/blog/22-tramites-empresa-extranjera-brasil`,
       lastModified: new Date(),
       changeFrequency: "monthly",
