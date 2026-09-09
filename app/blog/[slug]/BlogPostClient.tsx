@@ -3,15 +3,30 @@
 import { useState } from "react";
 import { Post, Lang } from "../posts";
 
-const dict: Record<Lang, { backBlog: string; readingSuffix: string; cta: string }> = {
-  es: { backBlog: "← Blog", readingSuffix: "de lectura", cta: "Habla con nosotros sobre tu proyecto" },
-  pt: { backBlog: "← Blog", readingSuffix: "de leitura", cta: "Fale conosco sobre o seu projeto" },
-  en: { backBlog: "← Blog", readingSuffix: "read", cta: "Talk to us about your project" },
+const dict: Record<Lang, { backBlog: string; readingSuffix: string; cta: string; relatedTitle: string }> = {
+  es: {
+    backBlog: "← Blog",
+    readingSuffix: "de lectura",
+    cta: "Habla con nosotros sobre tu proyecto",
+    relatedTitle: "Sigue leyendo",
+  },
+  pt: {
+    backBlog: "← Blog",
+    readingSuffix: "de leitura",
+    cta: "Fale conosco sobre o seu projeto",
+    relatedTitle: "Continue lendo",
+  },
+  en: {
+    backBlog: "← Blog",
+    readingSuffix: "read",
+    cta: "Talk to us about your project",
+    relatedTitle: "Keep reading",
+  },
 };
 
 const langLabel: Record<Lang, string> = { es: "ES", pt: "PT", en: "EN" };
 
-export default function BlogPostClient({ post }: { post: Post }) {
+export default function BlogPostClient({ post, allPosts }: { post: Post; allPosts: Post[] }) {
   const [lang, setLang] = useState<Lang>(() => {
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
@@ -21,6 +36,7 @@ export default function BlogPostClient({ post }: { post: Post }) {
     return "es";
   });
   const t = dict[lang];
+  const related = allPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
 
   return (
     <main className="min-h-screen">
@@ -83,6 +99,24 @@ export default function BlogPostClient({ post }: { post: Post }) {
           >
             {t.cta}
           </a>
+
+          {related.length > 0 && (
+            <div className="mt-14 border-t border-white/10 pt-8">
+              <p className="font-mono text-xs uppercase tracking-widest text-visto/90">{t.relatedTitle}</p>
+              <div className="mt-4 space-y-4">
+                {related.map((r) => (
+                  <a
+                    key={r.slug}
+                    href={`/blog/${r.slug}?lang=${lang}`}
+                    className="block rounded-sm border border-white/10 p-4 transition-colors hover:border-ouro/40"
+                  >
+                    <h3 className="font-display text-base font-bold text-textlight">{r.title[lang]}</h3>
+                    <p className="mt-1 font-body text-xs leading-relaxed text-textlight/60">{r.excerpt[lang]}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </article>
 

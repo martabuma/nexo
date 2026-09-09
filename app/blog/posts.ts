@@ -2,6 +2,7 @@ export type Lang = "es" | "pt" | "en";
 
 export type Post = {
   slug: string;
+  isoDate: string;
   date: Record<Lang, string>;
   readTime: Record<Lang, string>;
   title: Record<Lang, string>;
@@ -12,6 +13,7 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "cuenta-bancaria-capital-extranjero-nueva-norma-2026",
+    isoDate: "2026-09-09",
     date: { es: "9 de septiembre de 2026", pt: "9 de setembro de 2026", en: "September 9, 2026" },
     readTime: { es: "4 min", pt: "4 min", en: "4 min" },
     title: {
@@ -50,6 +52,7 @@ export const posts: Post[] = [
   },
   {
     slug: "22-tramites-empresa-extranjera-brasil",
+    isoDate: "2026-08-12",
     date: { es: "12 de agosto de 2026", pt: "12 de agosto de 2026", en: "August 12, 2026" },
     readTime: { es: "6 min", pt: "6 min", en: "6 min" },
     title: {
@@ -88,6 +91,7 @@ export const posts: Post[] = [
   },
   {
     slug: "sce-ied-que-es-como-registrar",
+    isoDate: "2026-07-20",
     date: { es: "20 de julio de 2026", pt: "20 de julho de 2026", en: "July 20, 2026" },
     readTime: { es: "4 min", pt: "4 min", en: "4 min" },
     title: {
@@ -126,6 +130,7 @@ export const posts: Post[] = [
   },
   {
     slug: "ltda-vs-sa-estructura-societaria-brasil",
+    isoDate: "2026-07-03",
     date: { es: "3 de julio de 2026", pt: "3 de julho de 2026", en: "July 3, 2026" },
     readTime: { es: "5 min", pt: "5 min", en: "5 min" },
     title: {

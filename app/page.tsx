@@ -466,6 +466,7 @@ const langLabel: Record<Lang, string> = { es: "ES", pt: "PT", en: "EN" };
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>("es");
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const t = dict[lang];
 
   return (
@@ -679,38 +680,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="border-b border-white/10 bg-inkdeep px-5 py-16 sm:py-24">
-        <div className="mx-auto max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-widest text-visto/90">{t.faq.eyebrow}</p>
-          <h2 className="mt-3 font-display text-2xl font-bold leading-snug text-textlight sm:text-3xl">
-            {t.faq.title}
-          </h2>
-          <div className="mt-8 space-y-6">
-            {t.faq.items.map((item, i) => (
-              <div key={i} className="border-t border-white/10 pt-6">
-                <h3 className="font-display text-base font-bold text-textlight">{item.q}</h3>
-                <p className="mt-2 font-body text-sm leading-relaxed text-textlight/70">{item.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: t.faq.items.map((item) => ({
-                "@type": "Question",
-                name: item.q,
-                acceptedAnswer: { "@type": "Answer", text: item.a },
-              })),
-            }),
-          }}
-        />
-      </section>
-
       {/* CONTACT */}
       <section id="contacto" className="px-5 py-16 sm:py-24">
         <div className="mx-auto max-w-lg text-center">
@@ -735,6 +704,55 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-b border-white/10 bg-inkdeep px-5 py-16 sm:py-24">
+        <div className="mx-auto max-w-3xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-visto/90">{t.faq.eyebrow}</p>
+          <h2 className="mt-3 font-display text-2xl font-bold leading-snug text-textlight sm:text-3xl">
+            {t.faq.title}
+          </h2>
+          <div className="mt-8 space-y-3">
+            {t.faq.items.map((item, i) => {
+              const isOpen = openFaq === i;
+              return (
+                <div key={i} className="border-t border-white/10 pt-3">
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                    className="flex w-full items-center justify-between gap-4 py-3 text-left"
+                  >
+                    <span className="font-display text-base font-bold text-textlight">{item.q}</span>
+                    <span
+                      className={`flex-none font-mono text-xl text-ouro transition-transform ${isOpen ? "rotate-45" : ""}`}
+                    >
+                      +
+                    </span>
+                  </button>
+                  {isOpen && (
+                    <p className="pb-4 font-body text-sm leading-relaxed text-textlight/70">{item.a}</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: t.faq.items.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+              })),
+            }),
+          }}
+        />
       </section>
 
       {/* FOOTER */}
