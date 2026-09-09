@@ -159,7 +159,7 @@ const dict: Record<
         },
         {
           q: "¿Cuánto tiempo tarda el proceso de apertura?",
-          a: "Entre 90 y 180 días, según el organismo y el estado elegido. Los estados con mayor digitalización, como Paraná, suelen ser más rápidos.",
+          a: "Depende sobre todo del estado elegido y de lo rápido que se reúna la documentación necesaria. Como referencia, el rango habitual es de 90 a 180 días — los estados con mayor digitalización, como Paraná, suelen ir más rápido. Una buena coordinación desde el principio ayuda a evitar los retrasos que sí se pueden evitar.",
         },
         {
           q: "¿Qué es un procurador residente y por qué es obligatorio?",
@@ -289,7 +289,7 @@ const dict: Record<
         },
         {
           q: "Quanto tempo leva o processo de abertura?",
-          a: "Entre 90 e 180 dias, dependendo do órgão e do estado escolhido. Estados com maior digitalização, como o Paraná, costumam ser mais rápidos.",
+          a: "Depende principalmente do estado escolhido e da rapidez em reunir a documentação necessária. Como referência, o prazo habitual é de 90 a 180 dias — estados com maior digitalização, como o Paraná, costumam ser mais rápidos. Uma boa coordenação desde o início ajuda a evitar os atrasos que podem ser evitados.",
         },
         {
           q: "O que é um procurador residente e por que é obrigatório?",
@@ -419,7 +419,7 @@ const dict: Record<
         },
         {
           q: "How long does the opening process take?",
-          a: "Between 90 and 180 days, depending on the agency and the state chosen. More digitized states, like Paraná, tend to be faster.",
+          a: "It mostly depends on the state chosen and how quickly the required documents are gathered. As a reference, the usual range is 90 to 180 days — more digitized states, like Paraná, tend to be faster. Good coordination from the start helps avoid the delays that are actually avoidable.",
         },
         {
           q: "What is a resident representative and why is it mandatory?",
