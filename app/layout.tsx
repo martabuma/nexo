@@ -3,7 +3,7 @@ import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 const SITE_URL = "https://nexomarketentry.com";
-const TITLE = "Nexo Market Entry — Entrada al mercado brasileño";
+const TITLE = "Nexo Market Entry - Entrada al mercado brasileño";
 const DESCRIPTION =
   "Coordinamos estructura societaria, procurador residente y apertura completa de tu empresa en Brasil, junto a una red de profesionales registrados. Para pymes e inversores de Argentina, Uruguay, Colombia, España, Portugal y EE. UU.";
 

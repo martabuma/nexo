@@ -25,7 +25,7 @@ export default function ContactForm({ lang, labels }: { lang: string; labels: Fo
     const form = e.currentTarget;
     const formData = new FormData(form);
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-    formData.append("subject", "Novo contato — Nexo Market Entry");
+    formData.append("subject", "Novo contato: Nexo Market Entry");
     formData.append("from_name", "Nexo Market Entry (site)");
 
     try {

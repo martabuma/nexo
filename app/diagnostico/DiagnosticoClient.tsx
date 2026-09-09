@@ -57,7 +57,7 @@ const dict: Record<
   es: {
     eyebrow: "Diagnóstico inicial",
     title: "Cuéntanos sobre tu proyecto",
-    intro: "Completa este formulario — es la base de tu diagnóstico de viabilidad y estructura societaria. La mayoría de las preguntas son de selección rápida.",
+    intro: "Completa este formulario: es la base de tu diagnóstico de viabilidad y estructura societaria. La mayoría de las preguntas son de selección rápida.",
     sectionContact: "Datos de contacto",
     name: "Nombre completo",
     company: "Nombre de la empresa (si ya existe)",
@@ -131,7 +131,7 @@ const dict: Record<
   pt: {
     eyebrow: "Diagnóstico inicial",
     title: "Conte-nos sobre o seu projeto",
-    intro: "Preencha este formulário — é a base do seu diagnóstico de viabilidade e estrutura societária. A maioria das perguntas é de seleção rápida.",
+    intro: "Preencha este formulário: é a base do seu diagnóstico de viabilidade e estrutura societária. A maioria das perguntas é de seleção rápida.",
     sectionContact: "Dados de contato",
     name: "Nome completo",
     company: "Nome da empresa (se já existir)",
@@ -205,7 +205,7 @@ const dict: Record<
   en: {
     eyebrow: "Initial diagnosis",
     title: "Tell us about your project",
-    intro: "Fill out this form — it's the basis for your viability and corporate structure diagnosis. Most questions are quick multiple-choice.",
+    intro: "Fill out this form: it's the basis for your viability and corporate structure diagnosis. Most questions are quick multiple-choice.",
     sectionContact: "Contact details",
     name: "Full name",
     company: "Company name (if it already exists)",
@@ -367,7 +367,7 @@ export default function DiagnosticoClient() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-    formData.append("subject", "Novo diagnóstico — Nexo Market Entry");
+    formData.append("subject", "Novo diagnóstico: Nexo Market Entry");
     formData.append("from_name", "Nexo Market Entry (formulário de diagnóstico)");
 
     try {

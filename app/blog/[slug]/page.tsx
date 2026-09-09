@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
-  return { title: `${post.title.es} — Nexo Market Entry`, description: post.excerpt.es };
+  return { title: `${post.title.es} - Nexo Market Entry`, description: post.excerpt.es };
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
