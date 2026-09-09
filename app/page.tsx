@@ -155,7 +155,7 @@ const dict: Record<
       items: [
         {
           q: "¿Necesito estar en Brasil para abrir una empresa?",
-          a: "No. Podés coordinar todo el proceso a distancia con un procurador residente que te representa en Brasil. Solo el registro migratorio (si pedís visado) y algún paso puntual de apertura de cuenta bancaria exigen presencia física.",
+          a: "No. Puedes coordinar todo el proceso a distancia con un procurador residente que te representa en Brasil. Solo el registro migratorio (si pides visado) y algún paso puntual de apertura de cuenta bancaria exigen presencia física.",
         },
         {
           q: "¿Cuánto tiempo tarda el proceso de apertura?",
@@ -171,11 +171,11 @@ const dict: Record<
         },
         {
           q: "¿Qué estructura societaria conviene, LTDA o S.A.?",
-          a: "Para más del 90% de los casos, la LTDA es la opción correcta: no exige capital mínimo y es más simple de mantener. La S.A. solo tiene sentido si buscás captar inversión institucional.",
+          a: "Para más del 90% de los casos, la LTDA es la opción correcta: no exige capital mínimo y es más simple de mantener. La S.A. solo tiene sentido si buscas captar inversión institucional.",
         },
         {
           q: "¿Cuánto capital necesito para abrir una empresa en Brasil?",
-          a: "No hay un mínimo legal para una empresa estándar. Si además querés un visado de inversión, el mínimo exigido es de R$ 500.000 (o R$ 150.000 para empresas de base tecnológica).",
+          a: "No hay un mínimo legal para una empresa estándar. Si además quieres un visado de inversión, el mínimo exigido es de R$ 500.000 (o R$ 150.000 para empresas de base tecnológica).",
         },
       ],
     },
