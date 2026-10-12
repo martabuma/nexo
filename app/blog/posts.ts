@@ -22,7 +22,7 @@ export const posts: Post[] = [
       en: "Bank account with foreign capital: what changes with the new Central Bank rule",
     },
     excerpt: {
-      es: "El Banco Central amplió quién puede tener cuentas en moneda extranjera en Brasil, incluyendo explícitamente a empresas con participación extranjera en su capital. La norma entra en vigencia el 1 de octubre de 2026.",
+      es: "El Banco Central amplió quién puede tener cuentas en moneda extranjera en Brasil, incluyendo explícitamente a empresas con participación extranjera en su capital. La norma está en vigor desde el 1 de octubre de 2026.",
       pt: "O Banco Central ampliou quem pode ter contas em moeda estrangeira no Brasil, incluindo explicitamente empresas com participação estrangeira em seu capital. A norma entra em vigor em 1º de outubro de 2026.",
       en: "The Central Bank expanded who can hold foreign-currency accounts in Brazil, explicitly including companies with foreign capital participation. The rule takes effect on October 1, 2026.",
     },
@@ -31,7 +31,7 @@ export const posts: Post[] = [
         "Abrir una cuenta bancaria para una empresa con capital extranjero en Brasil siempre fue uno de los pasos que generaba más dudas. No porque la ley lo prohibiera, sino porque los bancos suelen ser cautelosos con este tipo de cliente por temas de compliance contra el lavado de dinero. En la práctica, esto se traducía en procesos más lentos y con más documentación que para una empresa 100% nacional.",
         "Un primer punto que conviene aclarar: la creencia de que solo un banco específico trabaja con capital extranjero está desactualizada. Varios bancos ofrecen esta posibilidad, cada uno con sus propios criterios internos de análisis. Algunos incluso tienen procesos de apertura totalmente digitales, sin necesidad de enviar documentación original ni presentarse en una sucursal.",
         "La pieza que de verdad suele demorar el proceso no es la apertura de la cuenta en sí, sino la habilitación específica para operar cambio, el paso que permite que el capital extranjero efectivamente ingrese a Brasil. Sin esa habilitación, la cuenta puede estar abierta pero no lista para recibir la inversión.",
-        "Acá es donde aparece una novedad reciente: el Banco Central aprobó la Resolución BCB n.º 575, que amplía la lista de quiénes pueden tener cuentas en moneda extranjera dentro de Brasil, incluyendo explícitamente a las 'sociedades con participación extranjera en su capital social', exactamente el perfil de empresa que estamos describiendo en esta guía. La norma entra en vigencia el 1 de octubre de 2026.",
+        "Aquí es donde aparece una novedad reciente: el Banco Central aprobó la Resolución BCB n.º 575, que amplía la lista de quiénes pueden tener cuentas en moneda extranjera dentro de Brasil, incluyendo explícitamente a las 'sociedades con participación extranjera en su capital social', exactamente el perfil de empresa que estamos describiendo en esta guía. La norma está en vigor desde el 1 de octubre de 2026.",
         "Esto no elimina los requisitos de compliance ni las verificaciones habituales contra el lavado de dinero, que siguen vigentes como en cualquier operación de este tipo. Pero sí es una señal clara de que el marco regulatorio se está moviendo hacia más opciones para este tipo de empresas, no hacia menos. Vale la pena tenerlo en cuenta al planificar los tiempos de apertura, y confirmarlo con tu contable al momento de elegir banco.",
       ],
       pt: [
